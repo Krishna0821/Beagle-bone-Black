@@ -1,0 +1,9 @@
+import Adafruit_BBIO.GPIO as GPIO
+import time
+pinout="P9_12"
+GPIO.setup(pinout,GPIO.OUT)
+While 1:
+        GPIO.output(pinout,GPIO.HIGH)
+time.sleep(3)
+        GPIO.output(pinout,GPIO.LOW)
+time.sleep(3)
